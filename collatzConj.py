@@ -17,7 +17,7 @@ for i in collatz_list:
 	if i % 2 == 0:							# bei geraden Zahlen 
 		y = i / 2
 		collatz_list.append(y)
-	else: 									# bei ungeraden Zahlen (i%2!=0) 
+	else: 								# bei ungeraden Zahlen (i%2!=0) 
 		y = 3*i + 1 
 		collatz_list.append(y)
 	
@@ -73,7 +73,7 @@ plt.savefig(f'{wd}\collatz_testSave_ScatterBar.png')
 
 ## DataFrame 
 
-comment_list = []									# Test-Comments erzeugen
+comment_list = []								# Test-Comments erzeugen
 for i in collatz_list: 
 	if i not in (1,4,2): 
 		comment_list.append('Ok...')
